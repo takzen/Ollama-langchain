@@ -1,27 +1,27 @@
+'''6. Zapis odpowiedzi do pliku -
+   Jeśli chcesz zachować odpowiedzi, możesz je zapisać do pliku: 
+    Dlaczego? Zapis do pliku pozwala archiwizować odpowiedzi, np. do późniejszego wykorzystania.'''
+
 from langchain_ollama import OllamaLLM
 from langchain.prompts import PromptTemplate
 
-# Używamy dostępnego modelu 'llama3.2:latest'
 ollama_llm = OllamaLLM(
-    model="llama3.2",  # Zmieniamy nazwę modelu na "llama3.2:latest"
-    endpoint="http://127.0.0.1:11434/"  # Lokalne API serwera Ollama
+    model="llama3.2",
+    endpoint="http://127.0.0.1:11434/"
 )
 
-# Tworzymy szablon promptu
 prompt_template = """
 Odpowiedz na pytanie: {question}
 """
 prompt = PromptTemplate(template=prompt_template, input_variables=["question"])
-
-# Łączymy szablon promptu z modelem
 chain = prompt | ollama_llm
 
-# Definiujemy pytanie
 question = "Podaj przepis na rosół"
-
-# Wysyłamy zapytanie do modelu - metoda invoke na obiekcie chain
 response = chain.invoke({"question": question})
 
-# Wyświetlamy odpowiedź
 print(f"Pytanie: {question}")
 print(f"Odpowiedź: {response.text if hasattr(response, 'text') else response}")
+
+with open("odpowiedzi.txt", "a", encoding="utf-8") as file:
+    file.write(f"Pytanie: {question}\n")
+    file.write(f"Odpowiedź: {response.text if hasattr(response, 'text') else response}\n\n")

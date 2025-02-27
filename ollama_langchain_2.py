@@ -1,6 +1,7 @@
-'''2. Dodanie obsługi błędów. Jeśli serwer Ollama nie działa 
-lub coś pójdzie nie tak, kod może się wywalić. Możemy dodać 
-obsługę wyjątków, żeby był bardziej niezawodny.  Dlaczego? 
+'''2. Dodanie obsługi błędów. 
+Jeśli serwer Ollama nie działa lub coś pójdzie nie tak, 
+kod może się wywalić. Możemy dodać obsługę wyjątków, 
+żeby był bardziej niezawodny.  Dlaczego? 
 Jeśli serwer nie działa (np. nie uruchomiono Ollama), dostaniesz 
 czytelny komunikat o błędzie zamiast niezrozumiałego crasha.'''
 

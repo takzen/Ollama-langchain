@@ -1,4 +1,4 @@
-'''4. Ulepszenie szablonu promptu - 
+'''4. Ulepszenie szablonu promptu.
    Możesz zmodyfikować prompt_template, żeby odpowiedzi 
    były bardziej precyzyjne lub miały określony styl, np.: 
    Dlaczego? Dodanie instrukcji w szablonie (np. "zwięzły i 

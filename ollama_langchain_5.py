@@ -1,6 +1,6 @@
-'''5. Dodanie parametrów modelu -
+'''5. Dodanie parametrów modelu.
    Możesz dostosować zachowanie modelu, np. ustawić 
-   temperaturę (kontroluje kreatywność odpowiedzi): 
+   temperaturę (kontroluje kreatywność odpowiedzi).
    Dlaczego? Temperatura pozwala kontrolować, czy o
    dpowiedzi mają być bardziej przewidywalne (niższa wartość) 
    czy bardziej kreatywne (wyższa wartość).'''

@@ -15,6 +15,16 @@ Krótki przewodnik, jak skonfigurować i uruchomić lokalny model Ollama 3.2 z L
 ```bash
 ollama serve
 ollama pull ollama3.2  # Model Ollama 3.2 (2GB)
+ollama run llama3.2    # uruchamia tryb interaktywny z modelem
+/exit                  # wyjście z tryby interaktywnego
+```
+
+### 1b. Inne polecenie Ollama"
+```bash
+ollama show llama3.2    # podaje informacje o modelu llama3.2
+ollama list             # wyświetla liste modeli zainstalowanych na komputerze
+ollama ps               # wyświetla który model jest obecnie załadowany
+ollama stop llama3.2    # zatrzymuje model
 ```
 
 ### 2. Utwórz środowisko wirtualne (zalecane):

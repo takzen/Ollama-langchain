@@ -1,6 +1,7 @@
-'''6. Zapis odpowiedzi do pliku -
-   Jeśli chcesz zachować odpowiedzi, możesz je zapisać do pliku: 
-    Dlaczego? Zapis do pliku pozwala archiwizować odpowiedzi, np. do późniejszego wykorzystania.'''
+'''6. Zapis odpowiedzi do pliku.
+    Jeśli chcesz zachować odpowiedzi, możesz je zapisać do pliku.
+    Dlaczego? Zapis do pliku pozwala archiwizować odpowiedzi, 
+    np. do późniejszego wykorzystania.'''
 
 from langchain_ollama import OllamaLLM
 from langchain.prompts import PromptTemplate
